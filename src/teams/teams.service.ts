@@ -23,7 +23,6 @@ export class TeamsService {
     * getTeamByTeamName() : It will check, team is found or not
     */
     getTeamByTeamName(name: string) {
-        const test = this.teams.filter(team => team.teamName === name)
         const found = this.teams.find(team => team.teamName === name);
         if (!found) new NotFoundException(`TeamName :${name} Not found`);
         return found;
