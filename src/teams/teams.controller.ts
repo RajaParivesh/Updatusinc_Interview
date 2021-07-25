@@ -19,7 +19,7 @@ export class TeamsController {
     }
 
     @Patch("/:teamName")
-    updateTeams(@Param() teamName,@Body() data){
+    updateTeams(@Param('teamName') teamName,@Body() data){
         return this.teamsService.updateTeams(teamName,data);
     }
 }
