@@ -24,5 +24,3 @@ export class TeamsController {
     }
 }
 
-// todds@thetechhive.com 
-// and ryanw@thetechhive.com
